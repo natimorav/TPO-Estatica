@@ -1,0 +1,114 @@
+
+body {
+    background-color: black;
+    color: #FFC300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.logo {
+    text-align: center;
+}
+.menu table{
+   width: 100%;
+   text-align: center;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: larger;
+
+}
+.menu A:link {
+    color: #FFC300;
+    text-decoration: none;
+    
+}
+.menu A:active {
+    color: #FFC300;
+}
+.menu A:visited{
+    color: #FFC300;
+}
+.menu A:hover {
+    color: #FF5733;
+}
+.pie #copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.pie {
+    background-color:black;
+    position: relative; top: 20px;
+    list-style-image: url("imagenes/queso.png");
+    border: 3px solid #FFC300;
+    border-style: dashed;
+    
+}
+.pie A:active {
+    color: #FFC300;
+}
+.pie A:visited {
+    color: #FFC300;
+}
+.pie A:hover {
+    color: #FF5733;
+}
+a {
+    text-decoration: none;
+}
+.pie table {
+    width: 100%;
+}
+
+
+
+.opciones {
+    background-color: #FF5733;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.opciones A:link {
+    color:white ;
+}
+.opciones A:visited{
+    color:white;
+}
+.opciones A:active{
+    color:#FFC300 ;
+}
+.opciones A:hover {
+    color: #FFC300 ;
+}
+.consultanos {
+    background-color:#FFC300 ;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative; top: 1em;
+}
+.consultanos A:link {
+    color: #FF5733;
+}
+.consultanos A:visited {
+    color: #FF5733;
+}
+.consultanos A:active {
+    color: white;
+}
+.consultanos A:hover {
+    color: white;
+}
+
+h1 {
+    width: 100%;
+    color: white;
+    background-color: #FF5733;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+}

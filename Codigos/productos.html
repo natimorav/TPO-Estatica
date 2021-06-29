@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mira nuestros productos</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <style type="text/css">
+            .tupicadita {
+                list-style-image: url("imagenes/medida.png");
+                font-style: italic;
+            }
+            .tupicadita span {
+                font-weight: bold;
+                font-style: normal;
+            }
+            .ingredientes {
+                list-style-image: url("imagenes/queso.png");
+                font-style: italic;
+            }
+            .ingredientes #salsas {
+                list-style-image: url("imagenes/salsas.png");
+            }
+            .ingredientes #adicionalespicadas {
+                list-style-image: url("imagenes/iconomas.png");
+            }
+            #bordetupicadita{
+                border-right: 4px solid #FF5733;
+            }
+            .bordeizquierdo{
+                border-left: 4px solid #FF5733;
+            }
+            .bordederecho {
+                border-right: 4px solid #FF5733;
+            }
+
+        </style>
+
+    </head>
+    <body>
+         <!--LOGO-->
+         <div class="logo"><a href="index.html"><img src="imagenes/logo.png" alt="Logo"></a> </div>
+
+        <!--MENU-->
+        <span class="ir-arriba icon-arrow-up2"></span>
+        <div class="menu">
+            <table>
+                <tr>
+                    <td> <a href="index.html">INICIO </a></td>
+                    <td> <a href="productos.html">PRODUCTOS </a></td>
+                    <td> <a href="combos.html">COMBOS </a></td>
+                    <td> <a href="fechas.html">FECHAS ESPECIALES </a></td>
+                    <td> <a href="contacto.html">CONTACTO </a> </td>
+                    <td> <a href="marcas.html">MARCAS QUE USAMOS </a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!--CONTENIDO-->
+        <h1>Nuestros productos: </h1>
+        <div class="tupicadita">
+            <table>
+                <tr>
+                    <td>
+                        <img src="imagenes/img1.png" alt="picada" width="400">
+                    </td>
+                    <td class="bordederecho" >
+                        <ul> <h2>TUPICADITA</h2>
+                            <li>
+                                <p><span>Individual:</span> come 1, pican 2 - Hasta 4 fiambres </p>
+                            </li>
+                            <li>
+                                <p><span>Chica:</span> comen 2, pican 4 - Hasta 5 fiambres y 1 salsa </p>
+                            </li>
+                            <li>
+                                <p><span>Mediana:</span> comen 4, pican 6 - Hasta 7 fiambres y 3 salsa</p>
+                            </li>
+                            <li>
+                                <p><span>Grande:</span> comen 8, pican 10 - Hasta 9 fiambres y 5 salsa</p> 
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordeizquierdo">
+                        <UL> <h2>TUENSALADITA</h2>
+                            <li>
+                                <p><span>Opci&oacute;n 1:</span> rucula, tomate, repollo, jamón crudo, queso</p>
+                            </li>
+                            <li>
+                                <p><span>Opci&oacute;n 2:</span> lechuga, tomate, cebolla de verdeo, queso, paleta</p>
+                            </li>
+                            <li>
+                                <p><span>Opci&oacute;n 3:</span> zanahoria, tomate, huevo, repollo, queso</p>
+                            </li>
+                        </UL>
+                    </td>
+                    <td>
+                        <img src="imagenes/ensalada.png" alt="ensalada" width="400">
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <img src="imagenes/sandwich.jpg" alt="sandwich" width="400">
+                    </td>
+                    <td class="bordederecho">
+                        <ul><h2>TUSANDWICH</h2>
+                            <li>
+                                <p><span>Pequeño (15cm):</span> 2 fiambres a elecci&oacute;n + 1 salsa + lechuga + tomate </p>
+                            </li>
+                            <li>
+                                <p><span>Mediano (20cm):</span> 3 fiambres a elecci&oacute;n + 2 salsas + lechuga + tomate </p>
+                            </li>
+                            <li>
+                                <p><span>Grande (25cm):</span> 4 fiambres a elecci&oacute;n + 3 salsas + lechuga + tomate</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h1>Nuestros Ingredientes: </h1>
+        <div class="ingredientes">
+            <table>
+                <tr>
+                    <td class="bordeizquierdo">
+                        <ul></ul><h2>Fiambres:</h2>
+                            <li>Queso </li>
+                            <li>Queso sardo</li>
+                            <li>Queso cheedar</li>
+                            <li>Queso pategras</li>
+                            <li>Queso azul</li>
+                            <li>Jamon Crudo</li>
+                            <li>Jamon Cocido</li>
+                            <li>Bondiola</li>
+                            <li>Mortadela</li>
+                            <li>Panceta Ahumada</li>
+                            <li>Salame fuet serrano</li>
+                            <li>Salame tandil</li>
+                            <li>Salame picado grueso</li>
+                            <li>Salame picado fino</li>
+                        </ul>
+                     </td>
+                    <td >
+                        <img src="imagenes/fiambres.png" alt="fiambres" width="400">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img src="imagenes/salsa.png" alt="salsa">
+                    </td>
+                    <td class="bordederecho">
+                        <ul id="salsas"><h2>Salsas</h2>
+                            <li> Criolla </li>
+                            <li> Verdeo </li>
+                            <li> Lenteja </li>
+                            <li> Mayonesa </li>
+                        </ul>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="bordeizquierdo">
+                        <ul  id="adicionalespicadas"> <h2>Todas nuestras picadas incluyen:</h2>
+                            <li>mani</li>
+                            <li>pickles</li>
+                            <li>papas fritas</li>
+                            <li>pan tipo cacerito</li>
+                            <li>tostadas saborizadas</li>
+                            <li>aceitunas verdes y negras</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="imagenes/adicionales.png" alt="adicinales">
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+   
+        <div class="opciones">Tambi&eacute;n podes combinarlo con bebidas... <a href="combos.html"> Mira nuestros combos!</a></div>
+
+        <div class="consultanos">Si sos una empresa o te interesa un pedido al por mayor, <a href="contacto.html">consulta por nuestras ventas corporativas</a> </div>
+        
+        <!--PIE-->
+        <div class="pie">
+            <table>
+                <tr>
+                  <td>
+                      <p id="logopie"> <img src="imagenes/logo.png" alt="logo" width="230"></p>
+                    </td>
+                    <td>
+                      <p id="conocenos"> 
+                          <ul>Conocenos:
+                              <li><a href="contacto.html">Conoce mas de nosotros</a></li>
+                              <li><a href="productos.html">Conoce nuestros productos</a></li>
+                              <li><a href="combos.html">Conoce nuestros combos</a></li>
+                              <li><a href="fechas.html">Conoce nuestros especiales</a></li>
+                              <li><a href="marcas.html">Marcas que usamos</a></li>
+                          </ul>
+                      </p>
+                    </td>
+                    <td>
+                      <p id="redes">Cont&aacute;ctanos: <br/>
+                          <a href="https://www.facebook.com/tupicaditacipolletti"><img src="imagenes/logoface.png" width="20" alt="facebook"> Facebook</a><br/> 
+                          <a href="https://www.instagram.com/tu__picadita/"><img src="imagenes/logoinsta.png" width="20" alt="instagram"> Instagram </a><br/> 
+                          <a href="https://api.whatsapp.com/message/XCGF4U2BPGSHL1"> <img src="imagenes/logowsp.png" width="20" alt="whatsapp"> Whatsapp </a></p>
+                    </td>
+  
+                </tr>
+            </table>
+            <p id="copyright"> TUPICADITA | 2021  </p>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contactanos</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="validacion.js">
+        </script>
+        <style type="text/css">
+            .datos {
+                text-align: center;
+                margin: 4px;
+                padding: 4px;
+                width: 100%;
+            }
+            #opcionEmpresa {
+                display: none;
+
+            }
+            #esCliente {
+                display: none;
+            }
+            form input[type="button"]{
+                font-weight: bold;
+                border-radius:5px;
+                color:black;
+                background-color:#FFC300 ;
+            } 
+            form input[type="button"]:hover{
+	        cursor:pointer;
+            }
+            form input[type="text"]{
+                border-radius:5px;
+                color:black;
+          
+                font-family: Arial, Helvetica, sans-serif;
+                border: 2px solid #FFC300 ;
+                border-style: dotted;
+            } 
+            form select{
+                border-radius:5px;
+                color:black;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 2px solid #FFC300 ;
+                border-style: dotted;
+            } 
+            form textarea{
+                border-radius:5px;
+                color:black;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 5px solid #FFC300 ;
+                border-style: dotted;
+            } 
+
+
+        </style>
+    </head>
+    <body>
+         <!--LOGO-->
+         <div class="logo"><a href="index.html"><img src="imagenes/logo.png" alt="Logo"></a> </div>
+
+    <!--MENU-->
+    <div class="menu">
+    <table >
+        <tr>
+            <td> <a href="index.html">INICIO </a></td>
+            <td> <a href="productos.html">PRODUCTOS </a></td>
+            <td> <a href="combos.html">COMBOS </a></td>
+            <td> <a href="fechas.html">FECHAS ESPECIALES </a></td>
+            <td> <a href="contacto.html">CONTACTO </a> </td>
+            <td> <a href="marcas.html">MARCAS QUE USAMOS </a></td>
+        </tr>
+    </table>
+    </div>
+
+    <!--CONTENIDO-->
+    <div class="contacto">
+        <table class="datos">
+            <tr>
+                <td>
+                    
+                        <h2>Cont&aacute;ctanos</h2> 
+                        <form>
+                          
+                                Mail: <br/> <!--obligatorio-->
+                                <input id="idMail" name="idMail" type="text" size="40" maxlength="70" placeholder="Escribe tu mail"><br/>
+                                
+                        
+                                Nombre: <br/> <!--obligatorio-->
+                                <input id="idNombre" name= "idNombre" type="text" size="40" maxlength="15" placeholder="Escribe tu nombre"><br/>
+                                
+                                N&uacute;mero de tel&eacute;fono: <br/>
+                                <input id="idTelefono" name= "idTelefono" type="text" size="40" maxlength="9" placeholder="Escribe tu número de telefono"><br/>
+                                
+                                ¿Como nos conociste?
+                                <select id="clienteConoce" onchange="puntuaServicio()">
+                                    <option value="-"> - </option>
+                                    <option value="Facebook"> Facebook </option>
+                                    <option value="Instagram"> Instagram </option>
+                                    <option value="Amigos"> Amigos </option>
+                                    <option value = "soyCliente" > Ya soy cliente </option>
+                                    <option value="Otro"> Otro </option>
+                                </select> <br/>
+
+                                <div id="esCliente">
+                                    Puntúa nuestro servicio del 1 al 5: <br/>
+                                    <input type="text" id="puntuacion" placeholder="Puntuanos">
+                                </div>
+
+                                <div id="emp"> 
+                                 ¿Es empresa ?<br/>
+                               
+                                Si <input type="radio"  name="mayor" value="Si"  onclick="datosEmpresa()">
+                                No <input type="radio" name="mayor" value="No" onclick="noEsEmpresa()" checked> <br/>
+                                </div>
+                              
+
+                            <div id="opcionEmpresa">
+                            
+                                    Nombre de Empresa:<br/>
+                                
+                                    <input id="idEmpresa" name="idEmpresa" type="text" size="40" maxlength="15" placeholder="Escribe el nombre de tu empresa"><br/>
+                           
+                                    Cantidad Necesaria:<br/>
+                              
+                                    <input type="text" id="cantNecesaria" placeholder="Escribe la cantidad necesaria"><br/>
+                            
+                                    Fecha de necesidad:<br/>
+                                
+                                    <input type="text" id="fechaNecesidad" placeholder="dd/mm/aaaa"><br/>
+                          
+                            </div>
+                            
+                            
+                               Comentario: <br/> <!--Obligatorio-->
+                                <textarea id="idComentario" name= "idComentario" rows="10" cols="67" placeholder="Hacenos tu pedido / consulta"></textarea><br/>
+                            
+                           
+                                <input type="button" name="Enviar datos" value= "Enviar datos" onclick="enviarDatos()">
+                                <input type="button" value= "Borrar datos" onclick="limpiar()">
+                        </form>
+                  
+                </td>
+                <td>
+                    <h2>¿Qui&eacute;nes somos? </h2>
+                    Somos un emprendimiento familiar dedicados a ofrecerte las mejores picaditas, <br/>
+                    utilizando fiambres de la mejor calidad y asociandonos a emprendedores locales <br/>
+                    para ofrecerte el pan mas sabroso. Nos renovamos constantemente para ofrecerte<br/>
+                    la mejor experiencia, asi surgi&oacute; TUENSALADITA, y TUSANDWICH.<br/>
+                    Ofrecemos, adem&aacute;, box especiales para regalar y para fechas especiales.<br/>
+                    <h2>¿D&oacute;nde estamos?</h2> 
+                    Estamos en la ciudad de Cipolletti, provincia de Rio Negro.<br/>
+                    <h2>Nuestras redes: 
+                    <a href="https://www.facebook.com/tupicaditacipolletti"><img src="imagenes/logoface.png" width="20" alt="facebook"></a> <a href="https://www.instagram.com/tu__picadita/"><img src="imagenes/logoinsta.png" width="20" alt="instagram"></a> <a href="https://api.whatsapp.com/message/XCGF4U2BPGSHL1"> <img src="imagenes/logowsp.png" width="20" alt="whatsapp"></a><br/></h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22119.478509788867!2d-68.00253196898485!3d-38.93461888430196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30ee145c2355%3A0x488e3620b435393c!2sCipolletti%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1622487991756!5m2!1ses-419!2sar" width=1000 height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></td>
+            </tr>
+        </table>
+    </div>
+   
+    <!--PIE-->
+    <div class="pie">
+        <table>
+            <tr>
+              <td>
+                  <p id="logopie"> <img src="imagenes/logo.png" alt="logo" width="230"></p>
+                </td>
+                <td>
+                  <p id="conocenos"> 
+                      <ul>Conocenos:
+                          <li><a href="contacto.html">Conoce mas de nosotros</a></li>
+                          <li><a href="productos.html">Conoce nuestros productos</a></li>
+                          <li><a href="combos.html">Conoce nuestros combos</a></li>
+                          <li><a href="fechas.html">Conoce nuestros especiales</a></li>
+                          <li><a href="marcas.html">Marcas que usamos</a></li>
+                      </ul>
+                  </p>
+                </td>
+                <td>
+                  <p id="redes">Cont&aacute;ctanos: <br/>
+                      <a href="https://www.facebook.com/tupicaditacipolletti"><img src="imagenes/logoface.png" width="20" alt="facebook"> Facebook</a><br/> 
+                      <a href="https://www.instagram.com/tu__picadita/"><img src="imagenes/logoinsta.png" width="20" alt="instagram"> Instagram </a><br/> 
+                      <a href="https://api.whatsapp.com/message/XCGF4U2BPGSHL1"> <img src="imagenes/logowsp.png" width="20" alt="whatsapp"> Whatsapp </a></p>
+                </td>
+
+            </tr>
+        </table>
+        <p id="copyright"> TUPICADITA | 2021  </p>
+      </div>
+    </body>
+</html>
